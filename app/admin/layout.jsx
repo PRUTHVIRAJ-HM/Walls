@@ -91,7 +91,7 @@ export default function Layout({children}){
             <Sidebar/>
             <div className="flex-1 p-8 ml-64"> {/* ml-64 to offset the fixed sidebar width */}
                 <ToastContainer theme="dark"/>
-                {pathname !== '/admin/addWallpaper' && (
+                {pathname !== '/admin/addWallpaper' && pathname !== '/admin/management' &&(
                     <div>
                         <h3 className="text-3xl font-semibold mb-6">Dashboard</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

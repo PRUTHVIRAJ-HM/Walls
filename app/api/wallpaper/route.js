@@ -101,3 +101,18 @@ export async function PATCH(request) {
     }
 }
 
+export async function DELETE(request) {
+    const wallpaperId = request.nextUrl.searchParams.get("id");
+
+    if (!wallpaperId) {
+        return NextResponse.json({ success: false, msg: "No ID provided" }, { status: 400 });
+    }
+
+    try {
+        await WallpaperModel.findByIdAndDelete(wallpaperId);
+        return NextResponse.json({ success: true, msg: "Wallpaper deleted successfully" });
+    } catch (error) {
+        return NextResponse.json({ success: false, msg: error.message }, { status: 500 });
+    }
+}
+
