@@ -4,7 +4,7 @@ import "./globals.css";
 const poppins=Poppins({subsets:['latin'],weight:["400","500","600","700"]})
 
 export const metadata = {
-  title: "Wallsy",
+  title: "Walls",
   description: "A Wallpaper site for the world",
 };
 

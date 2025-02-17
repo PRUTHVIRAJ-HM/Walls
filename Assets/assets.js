@@ -6,6 +6,7 @@ import folder from './folder.png'
 import calendar from './calendar.png'
 import deletes from './delete.png'
 import storage from './server-storage.png'
+import hero from './Hero_Img.jpg'
 
 
 export const assets={
@@ -16,6 +17,7 @@ export const assets={
     folder,
     calendar,
     storage,
-    deletes
+    deletes,
+    hero
 
 }
